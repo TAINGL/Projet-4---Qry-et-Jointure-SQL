@@ -1,4 +1,5 @@
-  
+USE Diagram_Projet_4;
+
   ALTER TABLE customers
   ADD CONSTRAINT fk_customers_employees
 	FOREIGN KEY (salesRepEmployeeNumber)
@@ -28,7 +29,6 @@
 		REFERENCES orders (orderNumber)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE;
-   
    
    ALTER TABLE orderdetails
    ADD CONSTRAINT fk_orderdetails_products

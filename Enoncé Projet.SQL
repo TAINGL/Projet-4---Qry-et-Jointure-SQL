@@ -1,5 +1,5 @@
-Lancer le script schema-data.sql
-Recréer la DB en créant trois scripts : schema, data, constraint.sql
+-- Lancer le script schema-data.sql
+-- Recréer la DB en créant trois scripts : schema, data, constraint.sql
 
 -- select complet
 SELECT
