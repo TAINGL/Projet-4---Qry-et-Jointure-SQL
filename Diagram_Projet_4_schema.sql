@@ -16,12 +16,11 @@ USE Diagram_Projet_4;
 -- CREATE TABLES
 
 CREATE TABLE productlines (
-	productLine INT AUTO_INCREMENT,
+	productLine VARCHAR(50) NOT NULL,
     textDescription VARCHAR(250),
     htmlDescription VARCHAR(250),
     image BLOB,
 	PRIMARY KEY (productLine)
-
     );
     
     
@@ -36,7 +35,7 @@ CREATE TABLE productlines (
     buyPrice DECIMAL(10,2) NOT NULL,
     MSRP DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (productCode)
-    )ENGINE=InnoDB DEFAULT CHARSET=latin1;
+    )
     
     
     
@@ -79,8 +78,8 @@ CREATE TABLE productlines (
     addressLine1 VARCHAR(50) NOT NULL,
     addressLine2 VARCHAR(50),
     city VARCHAR(50) NOT NULL,
-    state VARCHAR(50),
-    postalCode VARCHAR(50),
+    state VARCHAR(50) NOT NULL,
+    postalCode VARCHAR(50) NOT NULL,
     country VARCHAR(50) NOT NULL,
     salesRepEmployeeNumber INT(11) DEFAULT NULL,
     creditLimit DECIMAL(10,2) DEFAULT NULL,
